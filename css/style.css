@@ -571,7 +571,7 @@ footer h3 {
     }
 
     .feature-tittle {
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
         line-height: 40px;
     }
@@ -616,7 +616,7 @@ footer h3 {
     .container-icon {
 
         grid-template-columns: repeat(2, 1fr);
-        margin: 50px 10px;
+        margin: 50px 30px;
 
     }
 
