@@ -1,726 +1,217 @@
 <!DOCTYPE html>
-<html lang="en" class="">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./dist/output.css" />
-    <link rel="stylesheet" href="./dist/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- header part Start here  -->
-    <header class="container mx-auto ">
-      <div class="mx-3">
-        <nav
-          class="bg-white border-gray-200 px-2 sm:px-5 py-3 rounded dark:bg-gray-900"
-        >
-          <div
-            class="container flex flex-wrap items-center justify-between mx-auto"
-          >
-            <a href="./index.html" class="flex items-center">
-              <img
-                src="./images/logo.png"
-                class="h-6 mr-3 sm:h-9"
-                alt="Flowbite Logo"
-              />
-            </a>
-            <div class="flex md:order-2">
-              <button
-                type="button"
-                data-modal-target="staticModal"
-                data-modal-toggle="staticModal"
-                class="text-white bg-yellow-500 hover:bg-yellow-600 focus:ring-4 focus:outline-none focus:ring-yellow-400 font-medium rounded-lg text-lg px-5 lg:px-7 py-3 lg:py-5 text-center mr-3 md:mr-0 dark:bg-yellow-500 dark:hover:bg-yellow-600 dark:focus:ring-yellow-600"
-              >
-                Free Consultation
-              </button>
-              <div
-                id="staticModal"
-                data-modal-backdrop="static"
-                tabindex="-1"
-                aria-hidden="true"
-                class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
-              >
-                <div class="relative w-full h-full max-w-2xl md:h-auto">
-                  <!-- Modal content -->
-                  <div
-                    class="relative bg-white rounded-lg shadow dark:bg-gray-700"
-                  >
-                    <!-- Modal header -->
-                    <div
-                      class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600"
-                    >
-                      <h3
-                        class="text-xl font-semibold text-gray-900 dark:text-white"
-                      >
-                        Static modal
-                      </h3>
-                      <button
-                        type="button"
-                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                        data-modal-hide="staticModal"
-                      >
-                        <svg
-                          class="w-5 h-5"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
-                          ></path>
-                        </svg>
-                      </button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="p-6 space-y-6">
-                      <p
-                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                      >
-                        With less than a month to go before the European Union
-                        enacts new consumer privacy laws for its citizens,
-                        companies around the world are updating their terms of
-                        service agreements to comply.
-                      </p>
-                      <p
-                        class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                      >
-                        The European Union’s General Data Protection Regulation
-                        (G.D.P.R.) goes into effect on May 25 and is meant to
-                        ensure a common set of data rights in the European
-                        Union. It requires organizations to notify users as soon
-                        as possible of high-risk data breaches that could
-                        personally affect them.
-                      </p>
-                    </div>
-                    <!-- Modal footer -->
-                    <div
-                      class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600"
-                    >
-                      <button
-                        data-modal-hide="staticModal"
-                        type="button"
-                        class="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-blue-800"
-                      >
-                        I accept
-                      </button>
-                      <button
-                        data-modal-hide="staticModal"
-                        type="button"
-                        class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-                      >
-                        Decline
-                      </button>
-                    </div>
-                  </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>G3 Architects- Design Dream House</title>
+</head>
+<body>
+    <!-- header Part start here -->
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                G3 Architects
+            </div>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">Contact Us</a></li>
+                    <li><a class="nav-link" href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-header-part">
+            <h1 class="header-tittle">Brand New <br>
+                Group of Architects 
+                </h1>
+                <p class="header-info">
+                    Designing for Impact: Exceptional Architecture for the Modern World. <br>
+                    Inspiring Spaces: Leading the Way in Architectural Design. <br>  
+                    </p>
+                <div class="btn">
+                    <button class="btn-head">Explore More</button>
                 </div>
-              </div>
-              <button
-                data-collapse-toggle="navbar-cta"
-                type="button"
-                class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                aria-controls="navbar-cta"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Open main menu</span>
-                <svg
-                  class="w-6 h-6"
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-            </div>
-            <div
-              class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-              id="navbar-cta"
-            >
-              <ul
-                class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-pink-400 md:p-0 dark:text-white text-2xl"
-                    aria-current="page"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-2xl"
-                    >Services</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-2xl"
-                    >Cases</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-2xl"
-                    >Blog</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-400 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 text-2xl"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      
-      </div>
+                <img src="./images/banner.png" alt="" class="header-banner">
+        </div>
     </header>
-    <!-- header part End here  -->
-    <!-- Main  Part -->
-    <main>
-      <!-- Banner Part -->
-      <section class="first-part container mx-auto rounded-xl">
-        <div class="  text-center header-part text-white lg:px-10 lg:my-20 mx-auto ">
-          <div class=" py-3 lg:py-10">
-            <h2 class="header-tittle md:text-6xl text-3xl lg:my-2 mt-20 ">
-                We Provide Effective <br> Legal Solutions
-            </h2>
-            <p class="text-sm lg:text-lg mt-2 text-center lg:my-5">Law is a system of rules and regulations <br> that are put in place to govern and regulate the behavior of individuals and organizations <br>within a society. It is the foundation of any civilized society and serves to protect the rights and interests of all <br>citizens. Laws are made by legislative bodies such as Congress or Parliament,<br> and enforced by the judicial system through the courts.</p>
-           <div class=" ">
-            <input type="text" id="large-input" class="w-50 md:w- p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 
-            my-2" placeholder=" Write Your Email">
-            <button class="md:px-5 md:py-4 rounded-xl bg-yellow-600 px-10 py-5">Search</button>
-          </div>
-           </div>
-      </div>
-      </section>
-      <!-- Banner Part -->
+    <!-- header Part End here -->
 
-  <!-- Law Section  -->
-  <section class="legal-law my-20">
-      <div class="container mx-auto">
-        <div class=" text-center">
-          <h2 class="text-5xl">The Legal Practice Area</h2>
-          <p class="text-lg my-3">Mastering the Art of Legal Advocacy: Strategies <br> for Success in the Courtroom
-            Building a Successful Legal Career: Tips and Insights from Experienced Attorneys</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 py-20 gap-y-6 ">
-          <!-- Card-1 -->
-        
-<div class="w-full   max-w-sm   rounded-lg dark:bg-gray-800 dark:border-gray-700 mx-auto py-16  " >
-  <a href="#">
-      <img class="p-8 rounded-t-lg mx-auto" src="./images/card-1.png" alt="product image" />
-  </a>
-  <div class="px-5 pb-5 text-center">
-      <a href="#">
-          <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"> Business law</h5>
-      </a>
-      <div class="flex items-center mt-2.5 mb-5 px-10 ">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas nostrum dignissimos ratione accusantium vel aliquid, qui ab unde iste.</p>
-      </div>
-      <div class="flex items-center justify-between">
-         <img src="./images/Frame.png" alt="" class="mx-auto">
-      </div>
-  </div>
-</div>
-          <!-- Card-2 -->
-        
-<div class="w-full bg-gradient-to-bl from-gray-200 to-white  max-w-sm   rounded-lg dark:bg-gray-800 dark:border-gray-700 mx-auto py-16   " >
-  <a href="#">
-      <img class="p-8 rounded-t-lg mx-auto" src="./images/Group 15.png" alt="product image" />
-  </a>
-  <div class="px-5 pb-5 text-center">
-      <a href="#">
-          <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"> Criminal Law</h5>
-      </a>
-      <div class="flex items-center mt-2.5 mb-5 px-10">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas nostrum dignissimos ratione accusantium vel aliquid, qui ab unde iste.</p>
-      </div>
-      <div class="flex items-center justify-between">
-         <img src="./images/Frame.png" alt="" class="mx-auto">
-      </div>
-  </div>
-</div>
-          <!-- Card-3 -->
-        
-<div class="w-full  max-w-sm   rounded-lg dark:bg-gray-800 dark:border-gray-700 mx-auto py-16   " >
-  <a href="#">
-      <img class="p-8 rounded-t-lg mx-auto" src="./images/layer1.png" alt="product image" />
-  </a>
-  <div class="px-5 pb-5 text-center">
-      <a href="#">
-          <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"> Child Support</h5>
-      </a>
-      <div class="flex items-center mt-2.5 mb-5 px-10">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas nostrum dignissimos ratione accusantium vel aliquid, qui ab unde iste.</p>
-      </div>
-      <div class="flex items-center justify-between">
-         <img src="./images/Frame.png" alt="" class="mx-auto">
-      </div>
-  </div>
-</div>
-         <!-- Card-4 -->
-        
-<div class="w-full   max-w-sm   rounded-lg dark:bg-gray-800 dark:border-gray-700 mx-auto py-16   " >
-  <a href="#">
-      <img class="p-8 rounded-t-lg mx-auto" src="./images/card-2.png" alt="product image" />
-  </a>
-  <div class="px-5 pb-5 text-center">
-      <a href="#">
-          <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"> Education Law</h5>
-      </a>
-      <div class="flex items-center mt-2.5 mb-5 px-10">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas nostrum dignissimos ratione accusantium vel aliquid, qui ab unde iste.</p>
-      </div>
-      <div class="flex items-center justify-between">
-         <img src="./images/Frame.png" alt="" class="mx-auto">
-      </div>
-  </div>
-</div>
-         <!-- Card-5 -->
-        
-<div class="w-full  max-w-sm rounded-lg dark:bg-gray-800 dark:border-gray-700 mx-auto py-16   " >
-  <a href="#">
-      <img class="p-8 rounded-t-lg mx-auto" src="./images/Group 13.png" alt="product image" />
-  </a>
-  <div class="px-5 pb-5 text-center">
-      <a href="#">
-          <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"> Tax Law</h5>
-      </a>
-      <div class="flex items-center mt-2.5 mb-5 px-10">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas nostrum dignissimos ratione accusantium vel aliquid, qui ab unde iste.</p>
-      </div>
-      <div class="flex items-center justify-between">
-         <img src="./images/Frame.png" alt="" class="mx-auto">
-      </div>
-  </div>
-</div>
- 
-         <!-- Card-6 -->
-        
-<div class="w-full   max-w-sm   rounded-lg dark:bg-gray-800 dark:border-gray-700 mx-auto py-16 " >
-  <a href="#">
-      <img class="p-5 rounded-t-lg mx-auto" src="./images/Group 16.png" alt="product image" />
-  </a>
-  <div class="px-5 pb-5 text-center">
-      <a href="#">
-          <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"> Divorce Law</h5>
-      </a>
-      <div class="flex items-center mt-2.5 mb-5 px-10">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas nostrum dignissimos ratione accusantium vel aliquid, qui ab unde iste.</p>
-      </div>
-      <div class="flex items-center justify-between">
-         <img src="./images/Frame.png" alt="" class="mx-auto">
-      </div>
-  </div>
-</div>
-      
+<!-- main section  Start Here  -->
+<main>
 
-        </div>
-      </div>
-  </section>
-  <!-- Law Section  -->
-  <!-- Client Section -->
-  <section class="client-section mb-20">
-    <div class="container mx-auto">
-    <div class=" text-center">
-      <h2 class="text-5xl my-5 ">
-        What Our Client Say
-      </h2>
-      <p class="text-xl my-3">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
-    </div>
-<!-- Slider main container -->
-<div class="swiper shadow-2xl rounded-xl  shadow-orange-200 mySwiper my-10">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide slider-one text-white">
-            <div class="lg:px-32">
-              <img src="./images/user-1.png" class="mx-auto" alt="">
-            <h2>  Daniel Baren  </h2>
-            <p>Senior Lawyer</p>
-            <p>"A senior lawyer brings a wealth of experience and knowledge to the table, offering clients the benefit of their years in the field."
-              "With a career spanning several decades, a senior lawyer has a deep understanding of the law and the ability to navigate complex legal issues."
-              "A senior lawyer is a respected figure in the legal community, known for their skill, integrity, and dedication to the practice of law."</p>
+
+    <section class="features">
+        <div class="features-container">
+            <div class="features-left">
+                <img src="./images/team1.png" alt="">
+                <img src="./images/team2.png" alt="">
+                <img src="./images/team3.png" alt="">
+                <img src="./images/team4.png" alt="">
             </div>
-    </div>
-    <div class="swiper-slide slider-one text-white ">
-      <div class="lg:px-32">
-        <img src="./images/user-1.png" class="mx-auto" alt="">
-      <h2>  Daniel Baren  </h2>
-      <p>Senior Lawyer</p>
-      <p>"A senior lawyer brings a wealth of experience and knowledge to the table, offering clients the benefit of their years in the field."
-        "With a career spanning several decades, a senior lawyer has a deep understanding of the law and the ability to navigate complex legal issues."
-        "A senior lawyer is a respected figure in the legal community, known for their skill, integrity, and dedication to the practice of law."</p>
-      </div> 
-    </div>
-    <div class="swiper-slide slider-one text-white">
-      <div class="lg:px-32">
-        <img src="./images/user-1.png" class="mx-auto" alt="">
-      <h2>  Daniel Baren  </h2>
-      <p>Senior Lawyer</p>
-      <p>"A senior lawyer brings a wealth of experience and knowledge to the table, offering clients the benefit of their years in the field."
-        "With a career spanning several decades, a senior lawyer has a deep understanding of the law and the ability to navigate complex legal issues."
-        "A senior lawyer is a respected figure in the legal community, known for their skill, integrity, and dedication to the practice of law."</p>
-      </div>   
-    </div>
- 
-  </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-</div>
+            <div class="features-right">
+                <h2 class="feature-tittle"><span class="gray">Quick list</span> <span class="black">of Our </span><br> Features</h2>
+                <p class="feature-info">
+                    An architect is a person who plans, designs and oversees the construction of buildings. To practice architecture means to provide services in connection with the design of buildings and the space within the site surrounding the buildings that have human
+                </p>
+                <button class="btn-head">Explore More</button>
+            </div>
+        </div>
 
+    </section>
+        <section class="love-enjoy">
+           
+            <div class="container-love-enjoy">
+                <div class="left-love-side">
+                    <div class="heading-part">
+                        <div class="border-left">
+                         <h2 class="tittle-love">  Features you will <br> love & enjoy</h2>
+                        </div>
+                         <p class="info-love">"Luxurious Features: Indulge in the Best of Modern Architecture"
+                            "Expertly Designed: Enjoy Exceptional Architecture in Every Detail"
+                          </p>
+                         <div class="ml-love">
+                            <h3>Desktop & Mobile Version</h3>
+                            <p>Seamless Experience: Enjoy the Same High-Quality Architecture on Desktop and Mobile"
+                                "Responsive Design: Access Exceptional Architecture from Any Device"
+                             </p>
+                         </div>
+                         <div class="ml-love">
+                            <h3>Drag & Drop Builder</h3>
+                            <p>"Effortless Creation: Build Your Vision with our Drag and Drop Builder"
+                                "User-Friendly Design: Create Exceptional Architecture with Ease"
+                                "Intuitive Interface: Build Your Dream Space with Drag and Drop Simplicity"
+                               
+                            </p>
+                         </div>
+                         <div class="ml-love">
+                            <h3>Awesome Modern Design</h3>
+                            <p>"Stunning Modern Design: Experience the Beauty of Contemporary Architecture"
+                                "Innovative Style: Discover the Latest in Modern Architectural Design"
+                              
+                                </p>
+                         </div>
+                         <div class="ml-love">
+                            <h3>Super Easy to Edit</h3>
+                            <p>Simple Editing: Effortlessly Make Changes to Your Architectural Design
+                                "Easy Customization: Personalize Your Design with Ease"
+                                "Flexible Editing: Adjust Your Design as Needed with Super Easy Editing"
+                               </p>
+                         </div>
+                     </div>
+                </div>
+                <div class="img-love-side">
+                    <img src="./images/architect.png" alt="">
+                    <button href="#" class="btn-lovejoy">10+Year
+                        <span> Experience</span><button>
+                </div>
+
+              
+            </div>
+            
+        </section>
+
+
+
+        <section class="icon-section">
+            <h2 class="icon-tittle">Some Facts</h2>
+            <p class="icon-info">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration.</p>
+            <div class="container-icon">
+            <div class="icon-bar">
+              <div class="bar-icon">
+                <img src="./images/icons/ribon.png" alt="">
+                <p class="icon-num">50</p>
+                <p class="tittle-icon">Awards Winnings</p>
+              </div>
+            </div>
+            <div class="icon-bar">
+              <div class="bar-icon">
+                <img src="./images/icons/projects.png" alt="">
+                <p class="icon-num">1458</p>
+                <p class="tittle-icon">Project Finished</p>
+              </div>
+            </div>
+            <div class="icon-bar">
+              <div class="bar-icon">
+                <img src="./images/icons/customers.png" alt="">
+                <p class="icon-num">590</p>
+                <p class="tittle-icon">Clientd Worked</p>
+              </div>
+            </div>
+            <div class="icon-bar">
+              <div class="bar-icon">
+                <img src="./images/icons/email.png" alt="">
+                <p class="icon-num">22578</p>
+                <p class="tittle-icon">Email Send</p>
+              </div>
+            </div>
+           
+            </div>
+
+
+        </section>
+
+
+<section class="brand-part">
+    <div class="brand-section">
+        <h3> Our Sponsor </h3>
+    <p>We are thrilled to have These Giant brand as our sponsor for this project. Their support has been instrumental in making this project a reality and we are incredibly grateful for their commitment to innovation and excellence.</p>
     </div>
-
-  </section>
-  <!-- Client Section -->
-
-
-<!-- section  of blog  -->
-<section class="my- Blog">
-  <h2 class="text-center text-5xl font-bold my-10"> Blog Of Law</h2>
-  <div class="container mx-auto">
     
-<div class="grid grid-cols-1 md:grid-cols-2 px-10 gap-5">
-  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 shadow-blue-600/50">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/Small-Business-Law-Justia.png" alt="">
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> "More than 500,000 businesses .... "</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">More than 500,000 businesses are started in the United States each month, according to Forbes. Of those with employees,...............</p>
-    </div>
-  </a>
-  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 shadow-green-600/50">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/closeup-gavel-judgement-concept.jpg" alt="">
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> "Understanding the Basics of Law: A Beginner's Guide"</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Law can be a complex and confusing topic for those who are not familiar with it. However, it is important to............</p>
-    </div>
-  </a>
-  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 shadow-red-600/40">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/lady-justice-law-library-concept.jpg" alt="">
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> "The Role of Law in Society: A Look at its Function and Impact"</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Law plays a vital role in shaping and regulating our society. It serves as a framework for maintaining order....</p>
-    </div>
-  </a>
-  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-2xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 shadow-yellow-600/50">
-    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/law-justice-concept-dark-background.jpg" alt="">
-    <div class="flex flex-col justify-between p-4 leading-normal">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> "The Importance of Access to Justice: A Closer Look at the Legal System"</h5>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Access to justice is a fundamental human right and is essential for the functioning of a fair and democratic society....... .</p>
-    </div>
-  </a>
-  
-</div>
 
-  </div>
+    <div class="brand">
+        <img src="./images/sponsors/amazon.png" alt="">
+        <img src="./images/sponsors/figma.png" alt="">
+        <img src="./images/sponsors/google.png" alt="">
+        <img src="./images/sponsors/spotify.png" alt="">
+        <img src="./images/sponsors/telerama.png" alt="">
+    </div>
 </section>
 
 
-<!-- section  of blog  -->
-
-
-
-
-  <!-- Faq -->
- <section class="FAQ my-20">
-  
-    <div class="container mx-auto  shadow-2xl shadow-amber-500/40">
-     <div class="text-center my-5 px-5">
-      <h2 class="text-3xl md:text-5xl font-semibold my-3">Frequently Asked Any Questions</h2>
-      <p class=" text-sm md:text-xl my-5">Frequently Asked Questions: Clear Answers to Common Concerns <br>
-        Your Questions, Answered: A Guide to Understanding Our Services <br>
-        Common Queries: Addressing the Issues that Matter to You</p>
-     </div>
-     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="faq  p-10">
-        <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-          <h2 id="accordion-flush-heading-1">
-            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
-              <span class="text-xl">1. What is the difference between flexbox and grid CSS?</span>
-              <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-          </h2>
-          <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-            <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">CSS layout utilities Flexbox and Grid enable developers to create adaptable and flexible web designs. They do, however, contain some significant differences:
-  
-                Flexbox is used to construct one-dimensional layouts with items in a single row or column. It is best suited for aligning things and regulating their size and spacing along a single axis. Flexbox is perfect for building simple and user-friendly layouts like navigation bars, lists, and form elements.</p>
-              <p class="text-gray-500 dark:text-gray-400"> Grid, on the other hand, is used to build two-dimensional layouts in which objects are placed in rows and columns in a grid. It works well for more sophisticated and dynamic layouts, such as image grids, card layouts, and multi-column text. Grid offers for finer-grained control over element positioning and more advanced layout choices like as grid templates and grid regions.
-                In summary, Flexbox is excellent for producing layouts with a single axis and Grid is best for developing layouts with two axes. Both can be combined to produce complicated and responsive designs.</p>
-            </div>
-          </div>
-          <h2 id="accordion-flush-heading-2">
-            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
-              <span class="text-xl">2. What is the purpose of CSS media queries?</span>
-              <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-          </h2>
-          <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-            <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">The purpose of CSS media queries is to apply different styles to a web page based on the characteristics of the device or viewport that is being used to view the page. Media queries allow developers to create responsive designs that adapt to different screen sizes and resolutions.
-  
-                With media queries, developers can apply different CSS styles based on the screen width, screen height, screen resolution, and other characteristics of the device or viewport. For example, a developer can use a media query to change the font size of a text on a webpage when it's viewed on a smaller screen, or to hide certain elements on a webpage when it's viewed on a mobile device.
-                
-                Media queries allow developers to create designs that are optimized for different devices, making it easier for users to access and navigate web pages on a wide range of devices, including desktops, laptops, tablets, and smartphones. They also enable developers to create designs that are optimized for different screen sizes and resolutions, which improves the user experience on different devices, and makes the website more accessible.</p>
-            </div>
-          </div>
-          <h2 id="accordion-flush-heading-3">
-            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
-              <span class="text-xl">3. What is CSSBox Model?</span>
-              <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-          </h2>
-          <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-            <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">The CSS Box Model is the concept that describes the layout of elements on a web page in CSS. It defines the dimensions and spacing of an element, including its content, padding, borders, and margins.
-  
-                The Box Model works by surrounding the content of an element with a rectangular box, which can be manipulated using CSS properties such as width, height, padding, border, and margin.
-                
-                The content of the box is the area where the element's content is displayed, such as text or images.
-                
-                The padding is the space between the content and the border. It can be set using the padding property and can be set individually for each side using properties such as padding-top, padding-bottom, padding-left, and padding-right.
-                
-                The border is the line that surrounds the element. It can be set using the border property and can also be set individually for each side using properties such as border-top, border-bottom, border-left, and border-right.
-                
-                The margin is the space outside of the border. It can be set using the margin property and can be set individually for each side using properties such as margin-top, margin-bottom, margin-left, and margin-right.
-                
-                It's important to note that the default box-sizing of most browsers is content-box, it means that the total width and height of an element is determined by the width and height properties plus padding and border. However, you can use box-sizing: border-box; which includes the padding and border in the total width and height of an element.</p>
-             
-            </div>
-          </div>
-          <h2 id="accordion-flush-heading-4">
-            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
-              <span class="text-xl">4. What is the definition of semantic tag?</span>
-              <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-            </button>
-          </h2>
-          <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
-            <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
-              <p class="mb-2 text-gray-500 dark:text-gray-400">Semantic tags are HTML tags that are used to describe the meaning of the content they contain. They provide information about the type of content contained within the tag, such as whether it is a heading, a paragraph, a list, or a table.
-  
-                Using semantic tags helps search engines and assistive technologies, such as screen readers, to better understand the content of a webpage, making it more accessible and easier to navigate. The semantic tags also make it easy for developers to style the webpage using CSS.
-                
-                Examples of semantic tags are:
-                <code>
-                &lt;header&gt;
-                &lt;nav&gt;
-                &lt;main&gt;
-                &lt;article&gt;
-                &lt;section&gt;
-                &lt;aside&gt;
-                &lt;footer&gt;
-                &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;
-                &lt;p&gt;
-                &lt;ol&gt;, &lt;ul&gt; and &lt;li&gt;
-                &lt;table&gt;, &lt;tr&gt;, &lt;th&gt; and &lt;td&gt;
-  
-                </code>
-                Using semantic tags also makes the code more readable and understandable for other developers who may be working on the same website.
-                
-                It should be noted that while semantic tags are important for accessibility, it's also important to use them in conjunction with other web accessibility techniques and best practices such as providing alternative text for images, appropriate use of headings, and providing clear and concise language.</p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="faq-img">
-        <img src="./images/Framee.png" class="rounded-xl" alt="">
-      </div>
-     </div>
-    </div>
-
- </section>
-
-
-
-
-  <section class="contact-form">
-    <div class="container mx-auto">
-      <!--  Contact -->
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div class="text-site">
-          
-<div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
-  <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700">
-      <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-        <img src="./images/location.png" class="mx-auto" alt="">
-          <h3 class="text-lg font-semibold text-gray-900 dark:text-white"> Address</h3>
-          <address>
-            A108 Adam Street, <br>
-New York, NY 535022
-          </address>
-      </blockquote>
-      
-  </figure>
-  <figure class="flex flex-col items-center justify-center p-8 text-center bg-white  border-b border-gray-200 rounded-tr-lg dark:bg-gray-800 dark:border-gray-700">
-    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-      <img src="./images/call.png" class="mx-auto" alt="">
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Call Us </h3>
-        <p>
-          +88 01750 00 00 00 <br>
-          +88 01750 00 00 00
-        </p>
-    </blockquote>
-       
-  </figure>
-  <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-bl-lg md:border-b-0 md:border-r dark:bg-gray-800 dark:border-gray-700">
-    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-      <img src="./images/email.png" class="mx-auto" alt="">
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Email Us </h3>
-        <p>
-          info@gmail.com <br>
-          info@gmail.com
-        </p>
-    </blockquote>
-        
-  </figure>
-  <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-br-lg dark:bg-gray-800 dark:border-gray-700">
-    <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-      <img src="./images/time.png" class="mx-auto" alt="">
-        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Working Hours </h3>
-        <p>
-          Mon-Fri: 9AM to 5PM <br>
-          Sunday: 9AM to 1 PM
-        </p>
-    </blockquote>
-     
-  </figure>
-</div>
-
-        </div>
-        <div class="form-site">
-          
-<form class="px-10">
-  <div class="mb-10">
- 
-    <input type="text" id="large-input" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"placeholder=" Name">
-  </div>
-  <div class="mb-10">
     
-    <input type="email" id="large-input" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Email">
-  </div>
-  <div class="mb-10">
-    
-    <input type="email" id="large-input" class="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Subject">
-  </div>
- 
-  <div class="mb-10">
-<textarea id="message" rows="5" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Massage"></textarea>
+</main>
 
-  </div>
-  <button class="bg-amber-700 w-full text-white py-4 text-2xl rounded-xl font-bold"> Send Message</button>
-</form>
 
-        </div>
-      </div>
-    </div>
-  </section>
+
+<!-- main section  Start Here  -->
 
 
 
 
+<!-- Footer start -->
 
-
-
-
-    </main>
-  
-    <!-- Main  Part -->
-<!-- footer  -->
-
-<footer class="p-4 bg-black sm:p-6 mt-20 text-white font-poppins">
-  <div class="md:flex md:justify-evenly px-10">
-      <div class="mb-6 md:mb-0">
-          <a href="" class="flex items-center">
-              <img src="./images/Group 37.png" class="h-8 mr-3" alt="" />
-             
-          </a>
-          <p class="text-justify lg:w-1/2">Law is a system of rules and regulations <br> that are put in place to govern and regulate the behavior of individuals and organizations <br>within a society. It is the foundation of any civilized society and serves to protect the rights and interests of all <br>citizens.</p>
-      </div>
-      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-          <div>
-              <h2 class="mb-6 text-lg font-semibold text-white">Resources</h2>
-              <ul class="text-white dark:text-gray-400">
-                  <li class="mb-4">
-                      <a href="#" class="hover:underline">Usefull Link</a>
-                  </li>
-                  <li>
-                      <a href="#" class="hover:underline">Home</a>
-                  </li>
-                  <li>
-                      <a href="#" class="hover:underline">About</a>
-                  </li>
-                  <li>
-                      <a href="#" class="hover:underline">Cases</a>
-                  </li>
-                  <li>
-                      <a href="#" class="hover:underline">Blog</a>
-                  </li>
-                  <li>
-                      <a href="#" class="hover:underline">Contact Us</a>
-                  </li>
-              </ul>
-          </div>
-          <div>
-              <h2 class="mb-6 text-lg font-semibold  text-white">Contact Now</h2>
-              <ul class="text-white dark:text-gray-400">
-                  <li class="mb-4">
-                      <a href="#" class="hover:underline space-y-5 ">
-                        <p>555 4th 5t NW, Washington <br>
-                          DC 20530, United States</p>
-                        <p>+88 01750 000 000 <br>
-                          +88 01750 000 000</p>
-                        <p>info@gmail.com <br>
-                          info@gmail.com</p>
-                      </a>
-                  </li>
-                  
-              </ul>
-          </div>
-          <div>
-              <h2 class="mb-6 text-lg font-semibold uppercase text-white">Subscribe</h2>
-              <ul class="text-white">
-                  <li class="mb-4">
-                      <a href="#" class="hover:underline">Privacy  Subscribe for our latest & Articles. We Won’t Give You Spam Mails</a>
-                  </li>
-                  <li>
-
-                    <input type="email" name="" id="" class="px-10 py-5  rounded-2xl absolute" >
-                    <button type="button" class="text-white bg-slate-50">
-                  
-                      <img src="./images/Vector.png" class="bg-amber-700 p-5 relative -right-48 top-0 rounded-2xl" alt="">
-                    </button>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </div>
-  
- 
-      </div>
-  </div>
+<footer>
+    <h3>All rights reserved copyright@2023 startup landing page design</h3>
 </footer>
 
-<!-- footer  -->
-    <!-- Flowbite JavaSvript Add Here  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./flowbite/dist/flowbite.min.js"></script>
-    <script src="./flowbite/dist/slider.js"></script>
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer start -->
+
+
+
+
+
+
+
+
+
+</body>
 </html>
